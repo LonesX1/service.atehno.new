@@ -1,0 +1,193 @@
+/*--
+    04. Header Css
+--------------------------*/
+
+.inner-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    @media #{$large-mobile} {
+        position: inherit;
+    }
+}
+
+.header-top-area {
+    padding: 18px 0 12px;
+}
+
+.contact-info-top {
+    @media #{$large-mobile} {
+        text-align: center;
+        & a {
+            color: $black;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    & ul {
+        & li {
+            display: inline-block;
+            margin-right: 30px;
+            color: $white;
+            &:last-child {
+                margin-right: 0;
+            }
+            & a {
+                display: block;
+                font-size: 14px;
+                & i {
+                    color: $theme-color;
+                    margin-right: 12px;
+                }
+            }
+            @media #{$small-mobile} {
+                margin-right: 0px;
+                &:last-child {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.socail-info-top {
+    display: flex;
+    justify-content: flex-end;
+    @media #{$large-mobile} {
+        justify-content: center;
+        margin-top: 8px;
+        & a {
+            color: $black;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    & ul {
+        & li {
+            display: inline-block;
+            margin-right: 10px;
+            color: $white;
+            &:last-child {
+                margin-right: 0;
+            }
+            & a {
+                display: block;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.header-sticky.is-sticky {
+    -webkit-animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+    background: rgba(250, 250, 250, 0.9) none repeat scroll 0 0;
+    -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+    left: 0;
+    margin: auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    & .header-bottom-wrap {
+        background: transparent;
+        padding: 0 0px;
+    }
+    @media #{$large-mobile} {
+        padding: 10px 0 0 0;
+        margin-bottom: 10px;
+    }
+}
+
+.header-bottom-wrap {
+    background: #fff;
+    border-radius: 3px;
+    padding: 0 40px;
+    @media #{$large-mobile} {
+        padding: 0 15px;
+    }
+}
+
+.logo-area {
+    margin: 18px 0;
+    @media #{$tablet-device} {
+        margin: 10px 0;
+    }
+    @media #{$large-mobile} {
+        margin: 0 0 15px 0;
+    }
+}
+
+.main-menu {
+    justify-content: flex-end;
+    display: flex;
+    & ul {
+        &>li {
+            display: inline-block;
+            margin-left: 50px;
+            position: relative;
+            &>a {
+                display: block;
+                color: #333;
+                padding: 20px 0;
+                font-weight: 500;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+            // sub-menu Css
+            & .sub-menu {
+                width: 220px;
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+                position: absolute;
+                background: #fff;
+                padding: 20px;
+                z-index: 9;
+                left: 0;
+                top: 120%;
+                visibility: hidden;
+                @include opacity(0);
+                @include transition(.3s);
+                border-bottom: 2px solid $theme-color;
+                &>li {
+                    display: block;
+                    margin-left: 0;
+                    margin-bottom: 8px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &>a {
+                        display: block;
+                        padding: 0;
+                        font-weight: 400;
+                        text-align: left;
+                        text-transform: capitalize;
+                        color: #333;
+                        font-size: 14px;
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+                &.right-submenu {
+                    right: 0;
+                    left: auto;
+                }
+            }
+            &:hover {
+                color: $theme-color;
+                & .sub-menu {
+                    visibility: visible;
+                    @include opacity(1);
+                    top: 100%;
+                }
+            }
+        }
+    }
+}

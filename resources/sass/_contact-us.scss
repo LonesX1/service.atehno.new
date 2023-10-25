@@ -1,0 +1,156 @@
+/*--
+    16. Contact Page Css
+------------------------------*/
+
+.contact-page-map {
+    position: relative;
+}
+#map {
+    height: 1280px;
+    @media #{$desktop-device}{
+        height: 1000px;
+    }
+    @media #{$tablet-device}{
+        height: 400px;
+    }
+    @media #{$large-mobile}{
+        height: 300px;
+    }
+}
+
+.box-contact {
+    border: 1px solid #ddd;
+    background: #fff;
+    max-width: 1410px;
+    width: 100%;
+    z-index: 9;
+    margin: auto;
+    position: relative;
+    @media #{$small-mobile}{
+        border: none;
+    }
+}
+.contact-us-area {
+    padding: 110px 0;
+    background: #fff;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @media #{$desktop-device}{
+        padding: 80px 0;
+        bottom: 80px;
+    }
+    @media #{$tablet-device}{
+        padding: 80px 0;
+        position: relative;
+        border: none;
+        bottom: 0px;
+    }
+    @media #{$large-mobile}{
+        padding: 70px 0;
+        position: relative;
+        border: none;
+        bottom: 0px;
+    }
+    @media #{$small-mobile}{
+        padding: 60px 0;
+        position: relative;
+        border: none;
+        bottom: 0px;
+    }
+}
+.contact-form-area {
+    & h3 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 55px;
+        @media #{$large-mobile}{
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+    }
+}
+.contact-form-warp {
+    & .input-box {
+        margin-bottom: 30px;
+        & input,
+        & textarea {
+            width: 100%;
+            padding: 15px;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+        & textarea {
+            height: 120px;
+        }
+    }  
+}
+.contact-submit-btn{
+    & .submit-btn {
+        border-radius: 0;
+        margin-top: 10px;
+        &:hover {
+            background: #333;
+            border: 1px solid #333;
+            color: $white;
+        }
+    }
+}
+.contact-info-wrap {
+    & .single-contact-info {
+        margin-bottom: 55px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            @media #{$large-mobile}{
+                margin-bottom: 10px;
+            }
+        }
+        & p {
+            margin-bottom: 0;
+        }
+        @media #{$desktop-device}{
+            margin-bottom: 35px;
+        }
+    }
+    @media #{$tablet-device}{
+        margin-top: 60px;
+         & .single-contact-info {
+            margin-bottom: 30px;
+        }
+    }
+    @media #{$large-mobile}{
+        margin-top: 60px;
+        & .single-contact-info {
+            margin-bottom: 25px;
+        }
+    }
+    @media #{$small-mobile}{
+        margin-top: 55px;
+    }
+}
+.form-messege {
+    &.error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+        font-style: italic;
+    }
+    &.success {
+        color: green;
+        font-size: 14px;
+        margin-top: 5px;
+        font-style: italic;
+    }
+}
+.footer-info{
+    & .logo {
+        text-align: left;
+    }
+}

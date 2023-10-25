@@ -1,0 +1,86 @@
+/*-- 
+    08. Service Css
+-------------------*/
+
+.single-service {
+    & h3 {
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    & p {
+        padding-right: 10px;
+    }
+    & a {
+        font-weight: 500;
+        color: $black;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+.service-details-menu {
+    & li {
+        & a {
+            background: #f6f6f6;
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            padding: 20px;
+            text-align: center;
+            &.active {
+                background: $theme-color;
+                color: $white;
+            }
+        }
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.service-details-content {
+    & p {
+        
+    }
+    @media #{$large-mobile , $tablet-device}{
+        margin-top: 30px;
+    }
+    & .service-details-image {
+        @media #{$large-mobile}{
+            margin-top: 30px;
+        }
+    }
+}
+
+.service-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.service-details-content-inner {
+   
+    & .service-details-list {
+        margin-top: 30px;
+        & li {
+            margin-bottom: 10px; 
+            padding-left: 40px;
+            position: relative;
+            &::before {
+                left: 0;
+                top: 50%;
+                position: absolute;
+                content: "";
+                background: $theme-color;
+                height: 1px;
+                width: 30px;
+            }
+            &:last-child {
+                margin: 0;
+            }
+            & i {
+                color: $theme-color;
+                margin-right: 10px;
+            }
+        }
+    }
+}

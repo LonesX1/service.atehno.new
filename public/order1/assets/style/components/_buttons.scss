@@ -1,0 +1,129 @@
+.button {
+    background: $white;
+    border: 1px solid $gray;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    position: relative;
+
+    .button {
+        @include padding;
+        font-size: 16px;
+
+        &.key-take {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        
+        &.key-find {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        &.active {
+            background: $red;
+            color: $white;
+            border-color: $red;
+        }
+
+        .badge {
+            position: absolute;
+            text-transform: uppercase;
+            font-size: 12px;
+            top: -16px;
+            right: -16px;
+            background: $red;
+            color: $white;
+            padding: 4px 8px;
+            @include rounded;
+        }
+    }
+}
+
+.cell {
+    width: 98px;
+    height: 98px;
+    @include rounded-sm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $bg;
+    font-family: 'Product Sans', sans-serif;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.keyboard {
+    .cell, .button {
+        margin: 0 6px;
+        @include rounded-sm;
+        background: $white;
+        border: .5px solid $gray;
+    }
+}
+
+.keyboard .button {
+    padding: 0 36px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+
+    svg {
+        width: 18px;
+        margin-right: 6px;
+    }
+
+    &.key-send {
+        
+        &.active {
+            background: $red;
+        
+            svg {
+                stroke: white;
+            }
+
+            span {
+                color: $white;
+            }
+        }
+    }
+}
+
+.key-help {
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0;
+    background: none;
+    border: none;
+    font-size: 16px;
+    align-items: center;
+    
+    svg {
+        width: 18px;
+        stroke: $red;
+        margin-right: 6px;
+    }
+
+    span {
+        color: $red;
+    }
+}
+
+.key-close {
+    padding: 0;
+    background: none;
+    border: none;
+
+    svg {
+        width: 18px;
+        margin-right: 6px;
+    }
+}

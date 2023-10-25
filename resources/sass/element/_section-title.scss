@@ -1,0 +1,66 @@
+/*--
+    - Section Title Css
+-------------------------------*/
+.section-title, .about-section-title,.section-title-two {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    &::after {
+        position: absolute;
+        left: 50%;
+        content: "";
+        height: 185px;
+        width: 165px;
+        top: 38%;
+        background: url('../../images/icon/title-bg.png') no-repeat;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    
+    & h4 {
+        color: $theme-color;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 22px;
+        margin-top: -5px;
+        @media #{$large-mobile}{
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        @media #{$tablet-device}{
+            margin-bottom: 15px;
+        }
+    }
+    
+    & h2 {
+        font-weight: 700;
+        color: $theme-color-two;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        margin-top: -7px;
+        margin-bottom: 15px;
+        & span {
+            color: $theme-color;
+        }
+    }
+    
+    & p {
+        font-size: 16px;
+        margin-top: 5px;
+        padding: 0 15px;
+        
+        @media #{$large-mobile }{
+            padding: 0 0;
+        }
+    }
+}
+.section-title-two {
+    &::after {
+        display: none;
+    }
+}
+.about-section-title {
+    margin-bottom: 10px;
+    &::after {
+        display: none;
+    }
+}

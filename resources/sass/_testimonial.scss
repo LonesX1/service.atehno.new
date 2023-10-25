@@ -1,0 +1,98 @@
+
+/*--
+    10. Testimonial Css
+---------------------------------*/
+
+.testimonial-wrap {
+    padding: 0 100px;
+    margin-top: 30px;
+    @media #{$large-mobile}{
+        padding: 0;
+    }
+    @media #{$tablet-device}{
+        padding: 0 30px;
+    }
+    & .testimonial-image {
+        text-align: center;
+        margin-bottom: 25px;
+        & img {
+            margin: auto;
+        }
+    }
+    & .testimonial-content {
+        margin: 0 5px;
+        width: 80%;
+        margin: auto;
+        & ul {
+            margin-bottom: 10px;
+            & li {
+                display: inline-block;
+            }
+        }
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+        @media #{$tablet-device}{
+            width: 90%;
+        }
+    }
+    & .author-info {
+        margin-top: 22px;
+        position: relative;
+        padding-top: 40px;
+        &::after {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 1px;
+            background: $theme-color;
+            left: 50%;
+            top: 0;
+        }
+        & h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        & p {
+            margin-bottom: -5px;
+        }
+    }
+}
+.testimonial-active {
+    & .slick-arrow {
+        font-size: 36px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: auto;
+        border: none;
+        border-radius: 5px;
+        z-index: 5;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        @media #{$large-mobile}{
+            opacity: 0;
+            bottom: 0%;
+            top: 75%;
+        }
+        &:hover {
+            color: $theme-color;
+        }
+        &.slick-prev {
+            left: 20px;
+            right: auto;
+        }
+        &.slick-next {
+            right: 20px;
+            left: auto;
+        }
+    } 
+    &:hover {
+        & .slick-arrow {
+        @media #{$large-mobile}{
+            opacity: 1;
+        }
+        }
+    }
+}

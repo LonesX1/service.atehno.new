@@ -1,0 +1,55 @@
+[23-Feb-2021 16:41:07 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Class 'Carbon' not found in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[23-Feb-2021 16:41:12 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Class 'Carbon' not found in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[23-Feb-2021 16:41:53 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Class 'Carbon' not found in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[23-Feb-2021 16:41:54 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Class 'Carbon' not found in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:46:29 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:48:01 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:49:21 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:49:39 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:50:25 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:50:59 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:52:27 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:52:55 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:53:08 Europe/Chisinau] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/atehnomd/service.md/public/assets/post.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:56:27 Europe/Chisinau] PHP Parse error:  syntax error, unexpected 'GOTO' (T_GOTO), expecting ';' in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:56:39 Europe/Chisinau] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) in /home/atehnomd/service.md/public/assets/post.php on line 42
+[17-Mar-2021 09:57:22 Europe/Chisinau] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) in /home/atehnomd/service.md/public/assets/post.php on line 42

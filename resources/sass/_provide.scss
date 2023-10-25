@@ -1,0 +1,54 @@
+/*--
+    07. Providr Area Css
+--------------------------*/
+
+.provide {
+    &-image {
+        border: 2px solid $theme-color;
+        overflow: hidden;
+        & a {
+            display: block;
+        }
+        & img {
+            width: 100%;
+            transform: scale(1.0);
+            @include transition(0.3);
+        }
+    }
+    &-title {
+        margin-top: -30px;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        margin-bottom: 0;
+        font-weight: 600;
+        letter-spacing: 1px;
+        width: 70%;
+        & a {
+            background: $white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 12px 0;
+            display: block;
+            text-align: center;
+            &:hover {
+                background: $theme-color;
+                color: $white;
+            }
+        }
+    }
+    &-contets {
+        padding: 30px 30px 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        @media #{$small-mobile}{
+            padding: 30px 25px 25px;
+        }
+    }
+    &-service {
+        &:hover {
+            & img {
+                transform: scale(1.2) rotate(-3deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Product Sans";
+    src: url("../../typography/ProductSans-Medium.woff2") format("woff2"),
+           url("../../typography/ProductSans-Medium.woff") format("woff");
+}
+
+* {
+    font-family: "Product Sans", sans-serif;
+}

@@ -1,0 +1,76 @@
+/*--
+    - Widget Css
+-------------------------*/
+
+.blog-widget {
+    & .title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    & ul {
+        & li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            display: block;
+            &:last-child {
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                border-bottom: none;
+            }
+            & a {
+                font-size: 14px;
+                display: block;
+                & span {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+.widget-blog-inner {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    & .widget-blog-image {
+        & img {
+            width: 150px;
+        }
+        padding-right: 15px;
+    }
+    & .widget-blog-content {
+        position: relative;
+        width: 100%;
+        & h3 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 23px;
+        }
+    }
+}
+.widget-tag {
+   & > a {
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 10px 10px 0 0;
+        padding: 4px 15px;
+        &:hover {
+            background: $theme-color;
+            color: #ffffff;
+            border: 1px solid $theme-color;
+        }  
+    }
+}
+
+
+
+
+
+
+

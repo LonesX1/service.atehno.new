@@ -1,0 +1,32 @@
+// colors
+$white: #ffffff;
+$black: #121212;
+$gray: #d4d4d4;
+$red: #ed1c24;
+$bg: #f1f1f1;
+
+body {
+    background: $bg;
+}
+
+// paddings
+@mixin padding {
+    padding: 2rem 3rem;
+}
+
+@mixin padding-sq {
+    padding: 1.2rem 2.2rem;
+}
+
+// roundings
+@mixin rounded {
+    border-radius: 1.2rem;
+}
+
+@mixin rounded-sm {
+    border-radius: .6rem;
+}
+
+@mixin border($side) {
+    border-#{$side}: .5px solid $gray;
+}

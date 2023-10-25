@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+  <g fill="none" fill-rule="evenodd" transform="translate(28 28)">
+    <path stroke="#181818" stroke-linecap="square" d="M8.5,14.4973145 L4.5,14.4973145"/>
+    <polyline stroke="#181818" stroke-linecap="square" points="5.499 17.5 .467 17.5 .516 15"/>
+    <polyline stroke="#181818" stroke-linecap="square" points="31.5 17.995 26.499 17.995 26.499 14.5" transform="rotate(180 29 16.247)"/>
+    <path stroke="#181818" stroke-linecap="square" d="M11.551239 17.5194092L8.49749756 17.5194092M26.5015869 17.5L22.5 17.5M21.5 14.5L19.4885254 14.5M17.5.516129032L17.5 7.50146484"/>
+    <polyline stroke="#181818" stroke-linecap="square" points="14.511 9.997 14.511 12.506 17.998 12.506"/>
+    <polyline stroke="#181818" stroke-linecap="square" points="13.999 19.501 13.999 22 17.495 22" transform="rotate(180 15.747 20.75)"/>
+    <path stroke="#181818" stroke-linecap="square" d="M17.4974976 25.0045776C17.4974976 25.1322238 17.4974976 27.1199452 17.4974976 30.9677419M14.5.516129032L14.5 3.49645996M14.5 28.516129L14.5 31.49646"/>
+    <polygon fill="#231F20" points="4.004 9 8.988 9 8.988 4 4.004 4"/>
+    <polygon stroke="#181818" points=".516 12.5 12.5 12.5 12.5 .519 .516 .519"/>
+    <polygon fill="#231F20" points="23.004 9 27.988 9 27.988 4 23.004 4"/>
+    <polygon stroke="#181818" points="19.516 12.5 31.5 12.5 31.5 .519 19.516 .519"/>
+    <polygon fill="#231F20" points="26 29 28.991 29 28.991 26 26 26"/>
+    <polygon stroke="#181818" points="23.504 31.5 31.5 31.5 31.5 23.503 23.504 23.503"/>
+    <polygon fill="#231F20" points="4.004 28 8.988 28 8.988 23 4.004 23"/>
+    <polygon stroke="#181818" points=".516 31.5 12.5 31.5 12.5 19.519 .516 19.519"/>
+    <polyline stroke="#181818" points="31.996 19.519 19.516 19.519 19.516 31.982"/>
+  </g>
+</svg>

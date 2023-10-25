@@ -1,0 +1,118 @@
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 5;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
+    
+        .logo {
+            margin: 24px;
+        }
+    
+        .panel {
+            background: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid $gray;
+            margin: 24px 0;
+            @include padding;
+            @include rounded;
+    
+            .fields {
+                display: flex;
+                flex-direction: row;
+                margin: 12px 0;
+                
+                .cell {
+                    margin: 0 6px;
+                }
+            }
+        }
+    
+        .keyboard {
+            display: flex;
+            flex-direction: column;
+            
+            .row {
+                display: flex;
+                flex-direction: row;
+                margin: 6px 0;
+    
+                form {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    
+        .waves-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+
+    .help-wrapper {
+        flex: 1;
+        @include border(left);
+        padding: 36px 48px;
+        background: $white;
+        display: none;
+        transition: .4s;
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .content {
+            p {
+                span {
+                    color: $red;
+                }
+            }
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &.result {
+        .result-h {
+            display: none !important;
+            visibility: hidden !important;
+        }
+    }
+}
+
+.result-table {
+
+    td {
+        @include border(top);
+        @include padding-sq;
+
+        &.row-name {
+            @include border(right);
+        }
+    }
+}

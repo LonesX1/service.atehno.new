@@ -1,0 +1,211 @@
+
+/*--
+    11. Faq Style
+-------------------------------*/ 
+
+.faq-style-wrap {
+    margin-top: 38px;
+    & .panel-default{
+        margin-bottom: 10px;
+    }
+    & .panel-title{
+        margin-bottom: 0;
+        font-weight: 500;
+        line-height: 24px;
+        & .button-faq {
+            position: absolute;
+            height: 35px;
+            width: 35px;
+            background: $theme-color;
+            z-index: 1;
+            left: 10px;
+            top: 44%;
+            transform: translateY(-40%);
+
+            &::before {
+                content: "";
+                width: 35px;
+                height: 0; 
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-bottom: 10px solid $theme-color;
+                border-left: 10px solid #fff;
+                border-right: 10px solid #fff;
+            }
+            &::after {
+                content: "";
+                width: 35px; 
+                height: 0;
+                position: absolute; 
+                bottom: 0; 
+                left: 0;
+                border-top: 10px solid $theme-color;
+                border-left: 10px solid #fff;
+                border-right: 10px solid #fff;
+            } 
+        }
+        
+        & a {
+            margin-bottom: 0px;
+            position: relative;
+            padding: 16px 50px 16px 60px;
+            background: #fff;
+            font-size: 16px;
+            width: 100%;
+            
+            @media #{$large-mobile}{
+                padding: 16px 10px 16px 60px;
+            }
+            
+            &::before{
+                position: absolute;
+                content: "+";
+                font-family: 'FontAwesome';
+                color: #fff;
+                font-size: 20px;
+                width: 25px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                left: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: 0.4s ease-in-out;
+                border-radius: 100%;
+                z-index: 4;
+                margin-top: 0px;
+            }
+            &[aria-expanded="true"] {
+                &::before{
+                    content: "-";
+                    font-size: 24px;
+                    margin-top: 0px;
+                }
+            }
+            &[aria-expanded="true"] {
+                border-radius: 3px;
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+                color: $theme-color;
+            }
+
+        }
+    }
+
+    & .panel-body {
+        background: transparent;
+        padding: 0px 35px;
+        border-left: 1px dashed #888 !important;
+        margin-left: 25px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        & p {
+            color: #494849;
+            font-size: 14px;
+            line-height: 28px;
+        }
+        & .read-btn {
+             a {
+                font-size: 14px;
+                color: #3e3e3e;
+                font-weight: 500;
+                display: inline-block;
+                border-bottom: 1px solid #9e9e9e;
+            }
+        }
+    }
+}
+.faq-inner-image-box{
+    position: relative;
+}
+.faq-inner-image {
+    margin-top: 30px;
+    text-align: center;
+    
+    @media #{$desktop-device,$large-mobile}{
+        text-align: right;
+        
+        & .faq-inner-02 {
+            margin-left: 0px;
+            position: absolute;
+            right: 170px;
+            margin-top: 27px;
+            @media #{$large-mobile}{
+                 margin-top: 0px;
+            }
+            @media #{$small-mobile}{
+                display: none;
+            }
+        }
+    }
+}
+
+.faq-inner-01 {
+    position: relative;
+    margin-bottom: -60px;
+    z-index: 1;
+    
+}
+.faq-inner-02 {
+    margin-left: -100px;
+}
+
+
+/*-- Team Area Css --*/
+
+.single-team {
+    position: relative;
+    &:hover {
+        .team-hover-action {
+            opacity: 1;
+            background: rgba(33, 51, 87, 0.9);
+        } 
+    }
+    &-thumb {
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.team-hover-action {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: theme-color;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    & .hover-action {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 45px;
+        
+        & h5 {
+            font-weight: 400;
+            color: $white;
+        }
+        & h4 {
+            color: $white;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        & p {
+            color: $white;
+        }
+        .social-network {
+            margin-top: 15px;
+            li {
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 24px;
+                color: $white;
+            }
+        }
+        
+    }
+}
+

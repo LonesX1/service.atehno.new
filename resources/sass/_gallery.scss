@@ -1,0 +1,62 @@
+
+/*--
+    12. gallery Area Css
+----------------------*/
+
+.single-gallery-image {
+    margin-top: 30px;
+    @include transition(0.3s);
+    & .gallery-box {
+        position: relative;
+        overflow: hidden;
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-color: rgba($white, 0.6);
+            @include transition(0.3s);
+            opacity: 0;
+        }
+        & img {
+            width: 100%;
+        }
+        & a {
+            display: block;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+                content: "";
+                background-image: url("../images/icon/plas-01.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                @include transform(scale(1.5));
+                @include transition(0.3s);
+                opacity: 0;
+            }
+        }
+        &:hover {
+            &::after  {
+                @include transform(scale(1));
+                opacity: 1;
+            }
+            & a {
+                &::before {
+                    @include transform(scale(1));
+                    opacity: 1;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,89 @@
+/*--
+    - Button Style
+------------------------------------------*/
+.default-btn {
+    margin-top: 40px;
+    letter-spacing: 1px;
+    padding: 13px 40px;
+    background: $theme-color;
+    display: inline-block;
+    border-radius: 5px;
+    color: $white;
+    display: inline-block;
+    border: 1px solid $theme-color;
+    color: $white;
+    &:hover {
+        background: $white;
+        color: $theme-color;
+        border: 1px solid $white;
+    }
+    @media #{$large-mobile}{
+        padding: 10px 23px;
+        margin-top: 20px;
+    }
+}
+.primary-btn {
+    border: 1px solid $white;
+    padding: 13px 40px;
+    color: $white;
+    display: inline-block;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 14px;
+    &:hover {
+        border: 1px solid $theme-color;
+        background: $theme-color;
+        color: $white;
+    }
+    @media #{$large-mobile}{
+        padding: 10px 23px;
+        margin-top: 20px;
+    }
+}
+
+.border-radius {
+    border-radius: 30px;
+}
+
+.btn {
+    background: $theme-color;
+    color: $white;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 14px;
+    @include transition(.3s);
+    position: relative;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    @media #{$small-mobile}{
+        padding: 1px 20px;
+        font-size: 12px;
+    }
+    & span {
+        display: inline-block;
+        line-height: inherit;
+        transition: none;
+    }
+    & i {
+        display: inline-block;
+        line-height: inherit;
+        transition: none;
+    }
+    &.left {
+        & i {
+            margin-right: 10px;
+        }
+    }
+    &.right {
+        & i {
+            margin-left: 10px;
+        }
+    }
+    &:hover , &:active {
+        background: $black;
+        color: $white;
+    }
+    
+}

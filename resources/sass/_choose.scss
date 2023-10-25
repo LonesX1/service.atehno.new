@@ -1,0 +1,218 @@
+/*-- 
+    09. Choose Css
+-------------------*/
+
+.choose-us-wrap {
+    padding: 80px 125px 80px 100px;
+    background: $white;
+    margin-left: -100px;
+    margin-bottom: -235px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    @media #{$laptop-device}{
+        margin-left: 0;
+        margin-bottom: -220px;
+        padding: 70px 60px 60px 50px;
+    }
+    @media #{$desktop-device}{
+        margin-left: 0;
+        margin-bottom: -200px;
+        padding: 70px 50px 70px 50px;
+    }
+    @media #{$tablet-device}{
+        margin-left: 0;
+        margin-bottom: 0px;
+        padding: 70px 50px 70px 50px;
+    }
+    
+    @media #{$large-mobile}{
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 60px 30px;
+    }
+    
+    & .why-choose-title {
+        & h2 {
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            font-size: 48px;
+            color: $theme-color-two;
+            @media #{$large-mobile}{
+                font-size:  26px;
+                margin-bottom: 25px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                background: $theme-color;
+                width: 70px;
+                height: 3px;
+                left: 0;
+                bottom: 0;
+            }
+            & span {
+                color: $theme-color;
+            }
+        }
+    }
+}
+.single-choose {
+    display: flex;
+    flex-direction: row;
+    
+    @media #{$large-mobile}{
+        flex-direction: column;
+        .single-choose-icon {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    
+    &-icon {
+        margin-right: 30px;
+        & i {
+            min-width: 80px;
+            height: 80px;
+            line-height: 80px;
+            background: $theme-color;
+            text-align: center;
+            display: inline-block;
+            border-radius: 100%;
+            font-size: 30px;
+            color: $white;
+            @media #{$large-mobile}{
+                 min-width: 60px;
+                height: 60px;
+                line-height: 60px;
+                font-size: 25px;
+            }
+        }
+    }
+    &-contents{
+        & h3 {
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        & p {
+            line-height: 24px;
+        }
+    }
+}
+
+.section-pt-custom {
+    padding: 230px 0 120px;
+    @media #{$desktop-device}{
+        padding: 200px 0 100px;
+    }
+    @media #{$tablet-device}{
+        padding: 80px 0 80px;
+    }
+    @media #{$large-mobile}{
+        padding: 70px 0 70px;
+    }
+    @media #{$small-mobile}{
+        padding: 60px 0 60px;
+    }
+    
+}
+/*-- video two*/
+.video-sectioon-area-two {
+    padding: 300px 0 355px;
+    @media #{$desktop-device}{
+        padding: 200px 0 255px;
+    }
+    @media #{$tablet-device}{
+        padding: 40px 0 95px;
+    }
+    @media #{$large-mobile}{
+        padding: 20px 0 75px;
+    }
+    & .video-button {
+        top: 50%;
+        right: 50%;
+    }
+}
+
+.video-area {
+    position: relative;
+    
+    @media #{$tablet-device,$large-mobile}{
+        min-height: 270px;
+    }
+}
+
+.video-btn {
+    top: 15px;
+    position: relative;
+    left: 20px;
+    z-index: 9;
+}
+
+.video-button {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    @media #{$laptop-device,$desktop-device,$tablet-device,$large-mobile}{
+        right: 50%;
+    }
+}
+.video-animation {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    left: -82px;
+    top: -82px;
+    z-index: 1;
+    float: right;
+    & .animation {
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        background: rgba($theme-color, .7);
+        background-clip: border-box;
+        opacity: 0;
+        border-radius: 50%;
+        background-clip: padding-box;
+        animation: waves 3s ease-in-out infinite;
+        animation-delay: 0s;
+        &.animation-1 {
+            animation-delay: 0.5s;
+        }
+        &.animation-2 {
+            animation-delay: 1.5s;
+        }
+        &.animation-3 {
+            animation-delay: 2.5s;
+        }
+        &.animation-4 {
+            animation-delay: 3.5s;
+        }
+    }
+}
+@-webkit-keyframes waves {
+    0% { 
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% { 
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+@keyframes waves {
+    0% { 
+        transform: scale(0.2, 0.2); 
+        opacity: 0;
+    }
+    50% { 
+        opacity: 0.9;
+    }
+    100% { 
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
